@@ -634,6 +634,36 @@ p{
 
 }
 
+.hero-context{
+
+    font-size:1.08rem;
+
+    max-width:680px;
+
+    margin-top:20px;
+
+    line-height:1.8;
+
+    color:var(--text-light);
+
+    padding:18px 24px;
+
+    background:rgba(166,25,46,.05);
+
+    border-left:4px solid var(--primary);
+
+    border-radius:12px;
+
+}
+
+.hero-context strong{
+
+    color:var(--primary);
+
+    font-weight:800;
+
+}
+
 
 
 .hero-footer{
@@ -1354,6 +1384,26 @@ button:hover{
 
 }
 
+.warning-card.center-warning{
+
+    max-width:750px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    margin-top:36px;
+
+    text-align:left;
+
+    justify-content:center;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
 .warning-card strong{
 
     color:var(--text);
@@ -1703,11 +1753,11 @@ button:hover{
 
     display:grid;
 
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(3,1fr);
 
-    gap:30px;
+    gap:22px;
 
-    margin-top:50px;
+    margin-top:36px;
 
 }
 
@@ -1722,6 +1772,36 @@ button:hover{
     box-shadow:var(--shadow);
 
     transition:.3s;
+
+}
+
+.privacy-card.compact{
+
+    padding:24px 22px;
+
+    border-radius:18px;
+
+    box-shadow:
+
+        0 2px 4px rgba(0,0,0,.03),
+
+        0 10px 24px rgba(0,0,0,.06);
+
+}
+
+.privacy-card.compact h3{
+
+    font-size:1.1rem;
+
+    margin-bottom:8px;
+
+}
+
+.privacy-card.compact p{
+
+    font-size:.92rem;
+
+    line-height:1.6;
 
 }
 
@@ -1753,6 +1833,38 @@ button:hover{
 
 }
 
+.privacy-icon-sm{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:rgba(166,25,46,.1);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.4rem;
+
+    margin-bottom:14px;
+
+}
+
+.compact-warning{
+
+    margin-top:22px !important;
+
+    font-size:.92rem;
+
+    padding:16px 22px;
+
+}
+
 
 
 /* ===========================================================
@@ -1777,9 +1889,91 @@ button:hover{
 
 }
 
+.contact-card.compact-contact{
+
+    width:780px;
+
+    padding:36px 40px;
+
+    border-radius:24px;
+
+}
+
 .contact-card h2{
 
     margin-bottom:30px;
+
+}
+
+.contact-card.compact-contact h2{
+
+    margin-bottom:22px;
+
+    font-size:2rem;
+
+}
+
+.contact-columns{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+.contact-col{
+
+    padding:0;
+
+}
+
+.contact-role{
+
+    font-family:var(--font-body);
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+    color:var(--primary);
+
+    margin-bottom:6px;
+
+}
+
+.contact-name{
+
+    font-family:var(--font-display);
+
+    font-size:1.25rem;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.contact-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+}
+
+.contact-ethics h3{
+
+    margin-bottom:10px;
 
 }
 
@@ -1824,6 +2018,18 @@ button:hover{
     font-weight:700;
 
     color:var(--primary);
+
+}
+
+.complaint-note{
+
+    margin-top:16px;
+
+    font-size:.92rem;
+
+    color:var(--text-light);
+
+    line-height:1.7;
 
 }
 
@@ -1938,7 +2144,7 @@ button:hover{
 
 .privacy-grid{
 
-    grid-template-columns:1fr;
+    grid-template-columns:repeat(2,1fr);
 
 }
 
@@ -1961,6 +2167,22 @@ button:hover{
 .phone{
 
     margin-bottom:40px;
+
+}
+
+.contact-columns{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+.contact-bottom{
+
+    flex-direction:column;
+
+    gap:20px;
 
 }
 
@@ -2002,6 +2224,18 @@ h2{
 .week-timeline{
 
     grid-template-columns:1fr;
+
+}
+
+.privacy-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.contact-card.compact-contact{
+
+    padding:28px 24px;
 
 }
 
@@ -2063,13 +2297,150 @@ body{
    ANIMATIONS
    =========================================================== */
 
+/* ===========================================================
+   PURPOSE OF STUDY (Slide 2)
+   =========================================================== */
+
+.purpose-split{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    margin-top:36px;
+
+}
+
+.purpose-block{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:28px 30px;
+
+    margin-bottom:22px;
+
+    box-shadow:
+
+        0 2px 4px rgba(0,0,0,.03),
+
+        0 10px 24px rgba(0,0,0,.06);
+
+    border-left:5px solid rgba(166,25,46,.2);
+
+}
+
+.purpose-block h3{
+
+    font-family:var(--font-display);
+
+    font-size:1.15rem;
+
+    margin-bottom:10px;
+
+}
+
+.purpose-block p{
+
+    font-size:.98rem;
+
+    line-height:1.7;
+
+}
+
+.purpose-block ul{
+
+    list-style:none;
+
+    margin-top:8px;
+
+}
+
+.purpose-block li{
+
+    padding:8px 0;
+
+    font-size:.98rem;
+
+    color:var(--text-light);
+
+    line-height:1.6;
+
+    border-bottom:1px solid var(--line);
+
+}
+
+.purpose-block li:last-child{
+
+    border:none;
+
+}
+
+.purpose-block li::before{
+
+    content:"→ ";
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.purpose-highlight{
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(166,25,46,.08),
+
+        rgba(166,25,46,.03)
+
+    );
+
+    border-left:5px solid var(--primary);
+
+    border-radius:16px;
+
+    padding:22px 26px;
+
+    font-size:1.05rem;
+
+    line-height:1.75;
+
+    color:var(--text);
+
+    font-weight:500;
+
+    text-align:center;
+
+    margin-top:10px;
+
+}
+
+@media (max-width:1200px){
+
+.purpose-split{
+
+    grid-template-columns:1fr;
+
+    gap:0;
+
+}
+
+}
+
 .slide.active .week,
 .slide.active .week-card,
 .slide.active .privacy-card,
 .slide.active .ema-card,
 .slide.active .mini-card,
 .slide.active .check-item,
-.slide.active .big-checklist>div{
+.slide.active .big-checklist>div,
+.slide.active .purpose-block{
 
     animation:fadeUp .7s ease both;
 
@@ -2078,7 +2449,8 @@ body{
 .slide.active .week:nth-child(2),
 .slide.active .week-card:nth-child(2),
 .slide.active .privacy-card:nth-child(2),
-.slide.active .ema-card:nth-child(2){
+.slide.active .ema-card:nth-child(2),
+.slide.active .purpose-block:nth-child(2){
 
     animation-delay:.12s;
 
