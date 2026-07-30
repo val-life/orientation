@@ -482,6 +482,28 @@ p{
 
 }
 
+.hero-building{
+
+    position:absolute;
+
+    right:-140px;
+
+    bottom:0;
+
+    height:100%;
+
+    width:auto;
+
+    object-fit:contain;
+
+    opacity:.70;
+
+    z-index:1;
+
+    pointer-events:none;
+
+}
+
 
 
 .slide-header{
