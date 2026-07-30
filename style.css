@@ -391,12 +391,20 @@ p{
 
 .hero{
 
-    justify-content:space-between;
+    justify-content:center;
 
     background:
         linear-gradient(135deg, #fafbfd 0%, #f3f0f2 100%);
 
     overflow:hidden;
+
+}
+
+.hero-inner{
+
+    position:relative;
+
+    z-index:2;
 
 }
 
@@ -494,6 +502,26 @@ p{
 
 }
 
+.fixed-logo{
+
+    position:fixed;
+
+    bottom:28px;
+
+    right:28px;
+
+    height:72px;
+
+    width:auto;
+
+    z-index:100;
+
+    filter:drop-shadow(0 2px 10px rgba(0,0,0,.1));
+
+    pointer-events:none;
+
+}
+
 
 
 .hero-content{
@@ -503,6 +531,8 @@ p{
     position:relative;
 
     z-index:2;
+
+    margin-bottom:40px;
 
 }
 
@@ -1160,6 +1190,20 @@ button:hover{
     box-shadow:
 
         0 2px 8px rgba(166,25,46,.3);
+
+}
+
+.msg-time{
+
+    display:block;
+
+    font-size:.72rem;
+
+    opacity:.6;
+
+    margin-bottom:4px;
+
+    font-weight:500;
 
 }
 
