@@ -8,6 +8,8 @@ const dots = document.querySelectorAll(".dot");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
+const fixedLogos = document.querySelectorAll(".fixed-logo");
+
 let currentSlide = 0;
 let isAnimating = false;
 
@@ -43,6 +45,10 @@ function updatePresentation() {
 
     prevBtn.style.opacity = prevBtn.disabled ? ".45" : "1";
     nextBtn.style.opacity = nextBtn.disabled ? ".45" : "1";
+
+    fixedLogos.forEach(logo => {
+        logo.style.display = currentSlide === 0 ? "none" : "";
+    });
 
 }
 

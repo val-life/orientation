@@ -564,6 +564,48 @@ p{
 
 
 
+.hero-logos-top{
+
+    position:absolute;
+
+    top:32px;
+
+    left:36px;
+
+    display:flex;
+
+    flex-direction:row;
+
+    align-items:center;
+
+    gap:12px;
+
+    z-index:10;
+
+}
+
+.hero-logos-top img{
+
+    height:64px;
+
+    width:auto;
+
+    filter:drop-shadow(0 2px 10px rgba(0,0,0,.1));
+
+}
+
+.hero-logos-top img:first-child{
+
+    height:72px;
+
+}
+
+.hero-logos-top img:last-child{
+
+    height:56px;
+
+}
+
 .hero-content{
 
     max-width:880px;
