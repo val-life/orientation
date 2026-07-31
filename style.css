@@ -81,13 +81,15 @@ body{
 
 #presentation{
 
-    position:relative;
+    position:absolute;
 
-    width:100vw;
+    width:1920px;
 
-    height:100vh;
+    height:1080px;
 
     overflow:hidden;
+
+    transform-origin:0 0;
 
 }
 
@@ -534,7 +536,7 @@ p{
 
 .fixed-logo{
 
-    position:fixed;
+    position:absolute;
 
     bottom:28px;
 
@@ -2137,14 +2139,13 @@ button:hover{
 
 #navigation{
 
-    position:fixed;
+    position:absolute;
 
     left:50%;
 
     bottom:35px;
 
     transform:translateX(-50%);
-
     display:flex;
 
     align-items:center;
@@ -2204,144 +2205,8 @@ button:hover{
 
 
 /* ===========================================================
-   RESPONSIVE
+   RESPONSIVE — removed; presentation is fixed 1920×1080
    =========================================================== */
-
-@media (max-width:1200px){
-
-.two-column,
-.split{
-
-    grid-template-columns:1fr;
-
-}
-
-.week-grid,
-.week-timeline{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.ema-layout,
-.three-cards{
-
-    grid-template-columns:1fr;
-
-}
-
-.privacy-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-.journey-road{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    gap:35px;
-
-}
-
-.road{
-
-    display:none;
-
-}
-
-.phone{
-
-    margin-bottom:40px;
-
-}
-
-.contact-columns{
-
-    grid-template-columns:1fr;
-
-    gap:20px;
-
-}
-
-.contact-bottom{
-
-    flex-direction:column;
-
-    gap:20px;
-
-}
-
-}
-
-@media (max-width:768px){
-
-.slide{
-
-    padding:40px;
-
-}
-
-h1{
-
-    font-size:2.8rem;
-
-}
-
-h2{
-
-    font-size:2.2rem;
-
-}
-
-.hero h1{
-
-    font-size:3rem;
-
-}
-
-.hero-footer{
-
-    flex-direction:column;
-
-}
-
-.week-grid,
-.week-timeline{
-
-    grid-template-columns:1fr;
-
-}
-
-.privacy-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.contact-card.compact-contact{
-
-    padding:28px 24px;
-
-}
-
-.info-card{
-
-    width:100%;
-
-}
-
-#navigation{
-
-    width:95%;
-
-    justify-content:space-between;
-
-}
-
-}
 
 
 
@@ -2509,17 +2374,6 @@ body{
 
 }
 
-@media (max-width:1200px){
-
-.purpose-split{
-
-    grid-template-columns:1fr;
-
-    gap:0;
-
-}
-
-}
 
 .slide.active .week,
 .slide.active .week-card,

@@ -2,6 +2,26 @@
    AI Chatbot Orientation Presentation
    ========================================================== */
 
+/* ---------- Scale to 1920×1080 ---------- */
+
+const DESIGN_W = 1920;
+const DESIGN_H = 1080;
+const presentation = document.getElementById("presentation");
+
+function scalePresentation() {
+    const scaleX = window.innerWidth / DESIGN_W;
+    const scaleY = window.innerHeight / DESIGN_H;
+    const scale = Math.min(scaleX, scaleY);
+
+    presentation.style.transform = `scale(${scale})`;
+    presentation.style.left = `${(window.innerWidth - DESIGN_W * scale) / 2}px`;
+    presentation.style.top = `${(window.innerHeight - DESIGN_H * scale) / 2}px`;
+}
+
+window.addEventListener("resize", scalePresentation);
+scalePresentation();
+
+
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
 
