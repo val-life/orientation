@@ -393,6 +393,14 @@ p{
 
 }
 
+.single-line-intro{
+
+    max-width:none;
+
+    white-space:nowrap;
+
+}
+
 .privacy-intro{
 
     max-width:none;
@@ -2108,6 +2116,10 @@ button:hover{
 .finish{
 
     margin-top:35px;
+
+    position:relative;
+
+    top:-18px;
 
     font-family:var(--font-display);
 
