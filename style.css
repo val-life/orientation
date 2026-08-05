@@ -281,7 +281,7 @@ body{
 
     font-family:var(--font-body);
 
-    font-size:.82rem;
+    font-size:.94rem;
 
     font-weight:700;
 
@@ -311,7 +311,7 @@ h1{
 
     font-family:var(--font-display);
 
-    font-size:4rem;
+    font-size:4.35rem;
 
     font-weight:800;
 
@@ -331,7 +331,7 @@ h2{
 
     font-family:var(--font-display);
 
-    font-size:3rem;
+    font-size:3.35rem;
 
     font-weight:800;
 
@@ -349,7 +349,7 @@ h3{
 
     font-family:var(--font-display);
 
-    font-size:1.35rem;
+    font-size:1.5rem;
 
     font-weight:700;
 
@@ -363,7 +363,7 @@ p{
 
     font-family:var(--font-body);
 
-    font-size:1.15rem;
+    font-size:1.3rem;
 
     color:var(--text-light);
 
@@ -397,7 +397,7 @@ p{
 
     max-width:none;
 
-    white-space:nowrap;
+    white-space:normal;
 
 }
 
@@ -405,7 +405,15 @@ p{
 
     max-width:none;
 
-    white-space:nowrap;
+    white-space:normal;
+
+}
+
+strong{
+
+    font-weight:800;
+
+    color:var(--text);
 
 }
 
@@ -680,7 +688,7 @@ p{
 
     font-weight:700;
 
-    font-size:.78rem;
+    font-size:.88rem;
 
     letter-spacing:.1em;
 
@@ -694,7 +702,7 @@ p{
 
 .hero h1{
 
-    font-size:4.8rem;
+    font-size:5.25rem;
 
     line-height:1.05;
 
@@ -722,7 +730,7 @@ p{
 
 .hero-subtitle{
 
-    font-size:1.35rem;
+    font-size:1.55rem;
 
     max-width:720px;
 
@@ -834,7 +842,7 @@ p{
 
     font-family:var(--font-body);
 
-    font-size:.82rem;
+    font-size:.92rem;
 
     text-transform:uppercase;
 
@@ -852,7 +860,7 @@ p{
 
     font-family:var(--font-display);
 
-    font-size:1.45rem;
+    font-size:1.6rem;
 
     font-weight:800;
 
@@ -1092,7 +1100,7 @@ button:hover{
 
     font-weight:700;
 
-    font-size:.95rem;
+    font-size:1.1rem;
 
 }
 
@@ -1431,7 +1439,7 @@ button:hover{
 
     transition:.25s;
 
-    font-size:1.02rem;
+    font-size:1.12rem;
 
     font-family:var(--font-body);
 
@@ -1474,7 +1482,7 @@ button:hover{
 
 .warning-card{
 
-    font-size:.98rem;
+    font-size:1.08rem;
 
     display:flex;
 
@@ -1498,7 +1506,7 @@ button:hover{
 
     justify-content:center;
 
-    font-size:.95rem;
+    font-size:1.05rem;
 
     line-height:1.7;
 
@@ -1685,6 +1693,10 @@ button:hover{
 
     font-family:var(--font-body);
 
+    font-size:1.08rem;
+
+    line-height:1.55;
+
 }
 
 .week li:last-child,
@@ -1867,6 +1879,14 @@ button:hover{
 
 }
 
+.privacy-slide .privacy-grid{
+
+    gap:16px;
+
+    margin-top:26px;
+
+}
+
 .privacy-card{
 
     background:#fff;
@@ -1883,7 +1903,7 @@ button:hover{
 
 .privacy-card.compact{
 
-    padding:24px 22px;
+    padding:18px 20px;
 
     border-radius:18px;
 
@@ -1897,7 +1917,7 @@ button:hover{
 
 .privacy-card.compact h3{
 
-    font-size:1.1rem;
+    font-size:1.2rem;
 
     margin-bottom:8px;
 
@@ -1905,9 +1925,9 @@ button:hover{
 
 .privacy-card.compact p{
 
-    font-size:.92rem;
+    font-size:.98rem;
 
-    line-height:1.6;
+    line-height:1.45;
 
 }
 
@@ -1941,9 +1961,9 @@ button:hover{
 
 .privacy-icon-sm{
 
-    width:50px;
+    width:44px;
 
-    height:50px;
+    height:44px;
 
     border-radius:50%;
 
@@ -1955,19 +1975,27 @@ button:hover{
 
     align-items:center;
 
-    font-size:1.4rem;
+    font-size:1.25rem;
 
-    margin-bottom:14px;
+    margin-bottom:10px;
 
 }
 
 .compact-warning{
 
-    margin-top:22px !important;
+    margin-top:14px !important;
 
-    font-size:.92rem;
+    font-size:.98rem;
 
-    padding:16px 22px;
+    padding:11px 18px;
+
+    line-height:1.45;
+
+}
+
+.final-slide .finish{
+
+    top:-32px;
 
 }
 
@@ -2039,7 +2067,7 @@ button:hover{
 
     font-family:var(--font-body);
 
-    font-size:.82rem;
+    font-size:.9rem;
 
     font-weight:700;
 
@@ -2057,7 +2085,7 @@ button:hover{
 
     font-family:var(--font-display);
 
-    font-size:1.25rem;
+    font-size:1.35rem;
 
     font-weight:700;
 
@@ -2087,7 +2115,7 @@ button:hover{
 
     font-family:var(--font-body);
 
-    font-size:1.15rem;
+    font-size:1.28rem;
 
     padding:12px 0;
 
@@ -2135,7 +2163,7 @@ button:hover{
 
     margin-top:16px;
 
-    font-size:.92rem;
+    font-size:1.02rem;
 
     color:var(--text-light);
 
@@ -2318,7 +2346,7 @@ body{
 
 .purpose-block p{
 
-    font-size:.98rem;
+    font-size:1.12rem;
 
     line-height:1.7;
 
@@ -2336,7 +2364,7 @@ body{
 
     padding:8px 0;
 
-    font-size:.98rem;
+    font-size:1.1rem;
 
     color:var(--text-light);
 
@@ -2380,7 +2408,7 @@ body{
 
     padding:22px 26px;
 
-    font-size:1.05rem;
+    font-size:1.15rem;
 
     line-height:1.75;
 
